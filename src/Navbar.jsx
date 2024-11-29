@@ -3,6 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaChild } from "react-icons/fa";
 import IMG11 from './images/boat110-1.png'
+import IMG12 from './images/boat110-2.png'
 
 
 
@@ -25,6 +26,8 @@ const Navbar = () => {
         </div>
 
       <img src={IMG11} alt="" className="w-96 h-96"  />
+      <img src={IMG12} alt="" className="w-96 h-96"  />
+
 
 
       </div>
