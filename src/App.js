@@ -1,16 +1,17 @@
-import React from 'react';
-import Navbar from './Navbar';
+import React from "react";
+import Navbar from "./Navbar";
+import Carousel from "./Carousel";
+import Carousel1 from "./Carousel1";
 
-
-
+  
 function App() {
   return (
-    <div >
-      
+    <div>
       <Navbar />
+      <Carousel />
+      <Carousel1 />
       
-      
-     
+
     </div>
   );
 }
