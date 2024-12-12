@@ -1,18 +1,31 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Carousel from "./Carousel";
-import Carousel1 from "./Carousel1";
+import React, { useEffect, useState } from "react";
+// import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Login from "./Login";
+import Signup from "./Signup";
+import Cart from "./Cart";
+import AllProject from "./AllProject";
 
+
+const App = () => {
   
-function App() {
-  return (
-    <div>
-      <Navbar />
-      <Carousel />
-      <Carousel1 />
-      
 
-    </div>
+  return (
+    <> 
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/login" element={<Login />}  />
+        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/allproject" element={<AllProject />} />
+        
+        
+      </Routes>
+        
+     
+
+    </>
   );
 }
 

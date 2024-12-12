@@ -1,4 +1,4 @@
-
+import React, { useState, useEffect } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -6,12 +6,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Parallax, Pagination, Navigation } from 'swiper/modules';
+import { Parallax, Pagination, Navigation, Autoplay } from 'swiper/modules';
 import { Carousel } from 'flowbite-react';
 
 
 const Name = () => {
     return (
+      <div className='mt-12'> 
         <>
         <Swiper
         style={{
@@ -32,12 +33,12 @@ const Name = () => {
           className="parallax-bg"
           style={{
             'background-image':
-            //   'url(https://swiperjs.com/demos/images/nature-1.jpg)',
+           
               'url(https://swiperjs.com/demos/images/nature-1.jpg)',
           }}
           data-swiper-parallax="-23%"
         ></div>
-        <SwiperSlide className='text-white'>
+        <SwiperSlide className='text-white '>
           <div className="grid grid-cols-2" data-swiper-parallax="-100">
             <div className='text-center font-bold mt-60'>
             <p className='text-xl mr-4 '>boAt Airdopes 131</p>
@@ -82,6 +83,7 @@ const Name = () => {
         </SwiperSlide>
       </Swiper>
         </>
+        </div>
 
     );
   };

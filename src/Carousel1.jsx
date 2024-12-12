@@ -17,9 +17,9 @@ const Carousel1 = () => {
     return (
     
      <>
-     <div className="slider-container text-white pt-10 ">
+     <div className="slider-container text-white pt-10 p-8">
      <p className="text-3xl font-bold text-center  ">Featured Products</p>
-      <Slider {...settings} className="pt-20 gap-20"> 
+      <Slider {...settings} className="pt-20 gap-10"> 
         <div className=" overflow-hidden text-center ">
         <p className="text-lg text-gray-600">boAt Airdopes 131</p>
          <img src="./images/jbl760nc-1.png" alt="" className="w-80 h-60 pt-4" />
